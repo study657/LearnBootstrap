@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Выравнивание содержимого</title>
+  </head>
+  <body>
+    <!-- Выравнивание содержимого с помощью flex свойств, таких же как в css, а именно justify-content (горизонталь) и align-items (вертикаль) -->
+    <!-- Вертикальное выравнивание производится с помощью свойств align-items, однаков в bs это свойство превращается в класс. И этот класс нужно задавать для рядов, т.е. для класса row -->
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+      </div>
+      <br>
+      <div class="row align-items-center">
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+      </div>
+      <br>
+      <div class="row align-items-end">
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+
+
+    <!-- Но предположим, что мы хотим выравнивать не все элементы в блоке, а только несколько или вовсе один, тогда на помощь приходит новый класс align-self- и задается он для уже колонок, т.е. для классов col -->
+    <div class="container">
+      <div class="row">
+        <div class="col align-self-start">
+          One of three columns
+        </div>
+        <div class="col align-self-center">
+          One of three columns
+        </div>
+        <div class="col align-self-end">
+          One of three columns
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+
+
+
+
+    <!-- Горизонтальное выравнивание -->
+    <!-- Горизонтальное выравнивание производится с помощью свойств justify-content, однаков в bs это свойство превращается в класс. И этот класс нужно задавать для рядов, т.е. для класса row -->
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-4">
+          One of two columns
+        </div>
+        <div class="col-4">
+          One of two columns
+        </div>
+      </div>
+      <br>
+      <div class="row justify-content-center">
+        <div class="col-4">
+          One of two columns
+        </div>
+        <div class="col-4">
+          One of two columns
+        </div>
+      </div>
+      <br>
+      <div class="row justify-content-end">
+        <div class="col-4">
+          One of two columns
+        </div>
+        <div class="col-4">
+          One of two columns
+        </div>
+      </div>
+      <br>
+      <div class="row justify-content-around">
+        <div class="col-4">
+          One of two columns
+        </div>
+        <div class="col-4">
+          One of two columns
+        </div>
+      </div>
+      <br>
+      <div class="row justify-content-between">
+        <div class="col-4">
+          One of two columns
+        </div>
+        <div class="col-4">
+          One of two columns
+        </div>
+      </div>
+      <br>
+      <div class="row justify-content-evenly">
+        <div class="col-4">
+          One of two columns
+        </div>
+        <div class="col-4">
+          One of two columns
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+
+
+
+
+    <!-- Так же элементы можно двигать непосредственно самими колонками в сетке bs. Т.е. например мы можем сделать так, чтобы сначала был отступ, скажем 3 колонки, а затем шло уже содержимое нашего блока, а точнее сам блок. Таким образом можно так же делать смещение блоков по центру, к примеру мы делаем отступ от нашего блока влево на 2 колонки, сам блок будет 8 колонок. Следовательно наш блок встанет по центру. Делается это с помозью класса offset-размерЭкрана-количество (offset-md-3) или без размеров экрана, просто (offset-3) -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div> <!--На всех экранах выше среднего будет сначала блок равный 4 колонки, затем отступ 4 колонки и еще один блок -->
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+        <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+      </div>
+    </div>
+    <br>
+    <hr>
+
+
+
+
+    <!-- Так же элементы можно двигать и делать по центру с помощью свойства margin, но в bs оно выглядит как класс mx-auto это для margin со значением auto, а так если нам нужен конкретный, то по первым буквам. Т.е. margin-top - mt. Более подробно об этом можно почитать в разделе Utilities далее поле Spacing -->
+    <div class="mx-auto" style="width: 200px;">
+      Centered element
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3 ms-md-auto">.col-md-3 .ms-md-auto</div>
+        <div class="col-md-3 ms-md-auto">.col-md-3 .ms-md-auto</div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-auto me-auto">.col-auto .me-auto</div>
+        <div class="col-auto">.col-auto</div>
+      </div>
+    </div>
+    <br>
+    <hr>
+
+
+
+
+    <!-- Теперь разберем автономный вариант расположения какой-то картинки и текста рядом с ней, ну т.е. когда идет какая-то картинка и рядом с ней будет поясняющий текст, в bs это можно сделать легко и быстро -->
+    <div class="clearfix">
+      <img src="images/rty.jpg" class="col-md-6 float-md-start mb-3 ms-md-3" alt="Картинка">
+    
+      <p>
+        Абзац текста-заполнителя. Мы используем его здесь, чтобы показать использование класса clearfix. Мы добавим здесь довольно много бессмысленных фраз, чтобы продемонстрировать, как столбцы взаимодействуют здесь с плавающим изображением.
+      </p>
+    
+      <p>
+        Как вы можете видеть, абзацы изящно обертываются вокруг плавающего изображения. Теперь представьте себе, как это будет выглядеть с некоторым фактическим содержанием здесь, а не просто с этим скучным текстом-заполнителем, который продолжается и продолжается, но на самом деле не передает никакой осязаемой информации. Он просто занимает много места и не должен быть действительно прочитан.
+      </p>
+    
+      <p>
+        И все же, здесь вы все еще настойчиво читаете этот текст-заполнитель, надеясь на некоторые новые озарения или какое-то скрытое пасхальное яйцо содержания. Возможно, это была шутка. К сожалению, здесь ничего подобного нет.
+      </p>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+  </body>
+</html>
