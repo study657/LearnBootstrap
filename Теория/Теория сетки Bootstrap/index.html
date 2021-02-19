@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Подключение Bootstrap для css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Теория сетки Bootstrap</title>
+  </head>
+  <body>
+    <!-- Деление колонок на равную ширину с помощью класса col -->
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            1 of 2
+          </div>
+          <div class="col">
+            2 of 2
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            1 of 3
+          </div>
+          <div class="col">
+            2 of 3
+          </div>
+          <div class="col">
+            3 of 3
+          </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+
+    <!-- Устанавливаем разные ширины для нашего содержимого с помощью классов от col-1 до col-12 -->
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            1 of 3
+          </div>
+          <div class="col-6">
+            2 of 3 (wider)
+          </div>
+          <div class="col">
+            3 of 3
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            1 of 3
+          </div>
+          <div class="col-5">
+            2 of 3 (wider)
+          </div>
+          <div class="col">
+            3 of 3
+          </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+
+    <!-- Делаем содержимое переменной ширины с помощью двух классов col и col-lg-2. И это будет работать только для устройст чуть больше средней ширины и выше. На других устройствах, наш контент будет делиться поровну, т.к. стоит класс col -->
+    <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col col-lg-2">
+            1 of 3
+          </div>
+          <div class="col-md-auto">
+            Variable width content
+          </div>
+          <div class="col col-lg-2">
+            3 of 3
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            1 of 3
+          </div>
+          <div class="col-md-auto">
+            Variable width content
+          </div>
+          <div class="col col-lg-2">
+            3 of 3
+          </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+
+    <!-- Адаптивку можно делать с помощью различных классов. Более подробно о них написано на оф. сайте, там есть табличка в разделе Layout далее grid, где подробно описывается каждый префикс после класса col-префикс-количество, для того, чтобы содержимое адаптировалось под разные устройства -->
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-8">col-sm-8</div>
+          <div class="col-sm-4">col-sm-4</div>
+        </div>
+        <div class="row">
+          <div class="col-sm">col-sm</div>
+          <div class="col-sm">col-sm</div>
+          <div class="col-sm">col-sm</div>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+
+    <!-- Так же мы может смешивать поведение наших блоков на разных устройства. К примеру можно сделать так, чтобы наше содержимое менялось в размере, когда мы находимся ниже класса col-md. Т.е. на мобильных устройствах, отображение уже будет иным -->
+    <div class="container">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+          <div class="col-md-8">.col-md-8</div>
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+      
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row">
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+      
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+          <div class="col-6">.col-6</div>
+          <div class="col-6">.col-6</div>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+
+    <!-- Гнездование содержимого. К примеру у нас на сайте есть блок с содержимым, а в нем мы должны сделать еще несколько блоков с содержимым, но хотим это сделать так же адаптивным и с помощью bs. Никто нам не мешает в этом же блоке создать еще один класс row и далее cols с 12 сетоной структурой -->
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            Level 1: .col-sm-3
+          </div>
+          <div class="col-sm-9">
+              Блок с содержимым
+            <div class="row">
+              <div class="col-8 col-sm-6">
+                Level 2: .col-8 .col-sm-6
+              </div>
+              <div class="col-4 col-sm-6">
+                Level 2: .col-4 .col-sm-6
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+
+    <!-- Сброс отступов. По умолчаю bs делает отступы от границ нашего блока для содержимого. Если мы не хотим делать эти отступы, а хотим, чтобы текст прилегал к краям блока, то тогда используется класс g-0 для класса row. Соответственно от g-1 до g-5 можно регулировать отступы от блока -->
+    <div class="container">
+        <div class="row g-0">
+          <div class="col-sm-3">
+            Level 1: .col-sm-3
+          </div>
+          <div class="col-sm-9">
+              Блок с содержимым
+            <div class="row g-0">
+              <div class="col-8 col-sm-6">
+                Level 2: .col-8 .col-sm-6
+              </div>
+              <div class="col-4 col-sm-6">
+                Level 2: .col-4 .col-sm-6
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+
+    <!-- Подключение Bootstrap для JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+  </body>
+</html>
