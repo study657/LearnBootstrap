@@ -115,6 +115,7 @@ h4{
 
 
 
+// section-watch
 
 .section-watch{
     background: url(../images/world_map.png) center center / cover no-repeat;
@@ -126,6 +127,60 @@ h4{
         padding: 15px 20px;
         color: #484848;
     }
+
+    .btn{
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        margin-right: 20px;
+        box-shadow: 0 10px 0 #ff5990;
+        transition: all 0.5s;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+    .btn-pink{
+        background-color: #f42267;
+    }
+    .btn-pink:hover{
+        box-shadow: 0 5px 0 #ff5990;
+    }
+}
+
+
+
+// section-statistic
+
+.section-statistic{
+    background-color: #4b2d7f;
+    color: white;
+    padding: 0;
+
+    .statistic-item{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+
+    .statistic-item:hover{
+        background-color: #40286a;
+    }
+
+    .megaphone{
+        background: url(../images/megaphone.svg) center center/ contain no-repeat;
+        padding: 35px;
+        margin-bottom: 25px;
+    }
+}
+
+
+// section-lets
+
+.section-lets{
+    background: url(../images/letsgrow.jpg) center center / cover no-repeat;
+    color: white;
 
     .btn{
         padding: 15px 30px;
@@ -182,6 +237,11 @@ h4{
 
     .section-watch .tab-content p{
         text-align: center;
+    }
+
+    .section-lets{
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
