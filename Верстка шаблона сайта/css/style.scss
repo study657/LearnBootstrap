@@ -73,7 +73,7 @@ h4{
         position: absolute;
         top: 25%;
         left: 5%;
-        max-width: 600px;
+        // max-width: 600px;
         color: white;
         padding: 20px;
 
@@ -146,6 +146,12 @@ h4{
     .btn-pink:hover{
         box-shadow: 0 5px 0 #ff5990;
     }
+
+    .nav-link.active{
+        background-color: #f42267;
+        color: #fff;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    }
 }
 
 
@@ -200,6 +206,85 @@ h4{
     .btn-pink:hover{
         box-shadow: 0 5px 0 #ff5990;
     }
+}
+
+
+// section-design
+
+.section-design{
+    .chat{
+        background: url(../images/chat.svg) left center / contain no-repeat;
+        padding: 30px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+
+    .megaphone{
+        background: url(../images/megaphone.svg) left center / contain no-repeat;
+        padding: 30px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+
+    .btn{
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        margin-right: 20px;
+        box-shadow: 0 10px 0 #ff5990;
+        transition: all 0.5s;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+    .btn-pink{
+        background-color: #f42267;
+    }
+    .btn-pink:hover{
+        box-shadow: 0 5px 0 #ff5990;
+    }
+
+    .video-block{
+        margin: 20px 0;
+        position: relative;
+        iframe{
+            border-radius: 20px;
+        }
+    }
+
+    // #videoPlayBtn{
+    //     background: url(../images/play.png) center center no-repeat;
+    //     height: 100%;
+    //     width: 100%;
+    //     cursor: pointer;
+    // }
+}
+
+
+// section-working
+
+.section-working{
+    background-color: #f1f1f1;
+    h2{
+        font-size: 44px;
+        font-weight: 600;
+    }
+
+    .galary-item{
+        margin-bottom: 30px;
+    }
+}
+.nav-pills .nav-link.active{
+    background-color: #f42267;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+.galary a img{
+    transition: all 0.5s;
+}
+.galary a:hover img{
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
 }
 
 
