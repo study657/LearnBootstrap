@@ -288,6 +288,97 @@ h4{
 }
 
 
+// section-reviews
+
+.section-reviews{
+    background: url(../images/reviews_bg.jpg) center center / cover no-repeat;
+    padding-bottom: 0;
+    padding-top: 20px;
+
+    .carousel-caption{
+        position: absolute;
+        right: 0;
+        bottom: auto;
+        left: 12%;
+        top: 5%;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        color: #fff;
+        text-align: left;
+        max-width: 40%;
+
+        figure{
+            margin: 60px 60px;
+            position: relative;
+
+            cite{
+                font-size: 17px;
+            }
+        }
+
+        figure::before{
+            content: '\201C';
+            position: absolute;
+            top: -80px;
+            left: -55px;
+            color: #f42267;
+            font-size: 150px;
+        }
+    }
+}
+
+
+// section-form
+
+.section-form{
+    background: url(../images/form_bg.jpg) center center / cover no-repeat;
+    color: white;
+
+    h5{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    input{
+        width: 90%;
+        height: 51px;
+        background-color: rgba(255,255,255,.35);
+        border: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 20px;
+        color: white;
+
+        &::placeholder{
+            color: white;
+        }
+    }
+
+    .btn{
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 15px 30px;
+    }
+
+    .btn-violet{
+        background-color: #69328e;
+    }
+
+    .btn-shadow{
+        border-radius: 10px;
+        box-shadow: 0 7px 0px #a57ee9;
+        transition: all .5s;
+
+        &:hover{
+            box-shadow: 0 3px 0px #a57ee9;
+        }
+    }
+}
+
+
 
 @media (max-width: 991px){
     .navbar-nav{
@@ -297,6 +388,27 @@ h4{
 
     .nav-item{
         margin-left: 15px;
+    }
+
+    .section-reviews .carousel-item h3,
+    .section-reviews .carousel-item h4{
+        font-size: 30px;
+    }
+
+    .section-reviews .carousel-item p{
+        font-size: 17px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .col-sm-7{
+        width: 100%;
+    }
+
+    .section-reviews .carousel-caption{
+        position: static;
+        max-width: 80%;
     }
 }
 
@@ -327,6 +439,10 @@ h4{
     .section-lets{
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+
+    .section-form{
+        padding: 20px;
     }
 }
 
