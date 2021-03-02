@@ -5,6 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        .preloader{
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #4b2d7f;
+            z-index: 9999999999999;
+        }
+    </style>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/baguetteBox.min.css">
@@ -13,6 +24,20 @@
     <title>TRADING</title>
   </head>
   <body>
+    <div class="preloader d-flex justify-content-center align-items-center">
+        <div class="spinner-border text-success" style="width: 15rem; height: 15rem;" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <!-- /.preloader -->
+
+
+    <div class="arrow-up">
+        <img src="images/up-arrow.svg" alt="">
+    </div>
+    <!-- /.arrow-up -->
+    
+
     <div class="main-header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -69,6 +94,7 @@
             </div>
         </div>
     </div>
+    <!-- /.main-header -->
 
     <section class="section-watch">
         <div class="container">
@@ -473,6 +499,100 @@
         </div>
     </section>
     <!-- /.section-form -->
+
+
+    <section class="section-footer">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-6 text-block">
+                            <h5>Company</h5>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Aproach</a></li>
+                                <li><a href="#">Sustainability</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">News</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h5>Company</h5>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Aproach</a></li>
+                                <li><a href="#">Sustainability</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">News</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h5>Company</h5>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Aproach</a></li>
+                                <li><a href="#">Sustainability</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">News</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h5>Company</h5>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Aproach</a></li>
+                                <li><a href="#">Sustainability</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 images-block">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/footer_img1.jpg" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="images/footer_img2.jpg" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="images/footer_img3.jpg" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="images/footer_img4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.section-footer -->
+
+    <div class="section-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                          <span class="nav-link" aria-current="page">&#169;2021 Theme by psdfreebies.com</span>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Terms of Use</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Site Map</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.section-copyright -->
 
 
 

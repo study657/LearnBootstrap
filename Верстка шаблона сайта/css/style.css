@@ -24,6 +24,18 @@ h4 {
   margin-bottom: 20px;
 }
 
+.arrow-up {
+  display: none;
+  background: url(../images/up-arrow.svg) center center/contain no-repeat;
+  position: fixed;
+  bottom: 3px;
+  right: 8px;
+  height: 50px;
+  width: 50px;
+  z-index: 9999999;
+  cursor: pointer;
+}
+
 .main-header {
   background: url("../images/main1.jpg") center center/cover no-repeat;
   height: 100vh;
@@ -383,8 +395,81 @@ h4 {
 }
 
 .section-form .btn-shadow:hover {
+  background: #3a2362;
   -webkit-box-shadow: 0 3px 0px #a57ee9;
           box-shadow: 0 3px 0px #a57ee9;
+}
+
+.section-footer {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(../images/world_map.png) center center/cover no-repeat;
+}
+
+.section-footer h5 {
+  font-weight: 600;
+  font-size: 25px;
+  color: #4b2d7f;
+}
+
+.section-footer ul li {
+  list-style: none;
+}
+
+.section-footer ul li a {
+  font-size: 15px;
+  font-weight: 600;
+  color: #171717;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.section-footer ul li a::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 1px solid #171717;
+  position: absolute;
+  bottom: 0px;
+}
+
+.section-footer ul li a:hover:before {
+  width: 100%;
+  height: 2px;
+}
+
+.section-footer .text-block {
+  margin-bottom: 30px;
+}
+
+.section-footer .images-block img {
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.section-copyright {
+  background-color: #f6f6f6;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px 0;
+}
+
+.section-copyright span, .section-copyright a {
+  font-weight: 600;
+  font-size: 18px;
+  color: #171717;
+  text-decoration: none;
+  position: relative;
+}
+
+.section-copyright span::after, .section-copyright a::after {
+  content: '\00B7';
+  position: absolute;
+  right: -3px;
+}
+
+.section-copyright ul li:last-child a::after {
+  content: '';
 }
 
 @media (max-width: 991px) {
