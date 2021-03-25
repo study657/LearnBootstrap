@@ -1,0 +1,670 @@
+$general_text_color: #777;
+$background_buttons: #3eb0f7;
+
+
+
+
+@mixin idea_contant_icons($icon){
+    background: url($icon) top center / contain no-repeat;
+    padding: 25px;
+    margin-right: 20px;
+}
+
+@mixin price_icons($icon){
+    background: url($icon) center center/contain no-repeat;
+    padding: 25px;
+    margin-bottom: 10px;
+}
+
+@mixin connection_icons($icon){
+    background: url($icon) top center / contain no-repeat;
+    padding: 15px;
+    margin-right: 5px;
+}
+
+@mixin social_icons($icon){
+    background: url($icon) center center / contain no-repeat;
+    padding: 15px;
+    margin-right: 5px;
+}
+
+
+
+
+.arrow-up{
+    display: none;
+    background: url(images/up-arrow.svg) center center/contain no-repeat;
+    padding: 25px;
+    position: fixed;
+    bottom: 3px;
+    right: 3px;
+}
+
+h2{
+    font-size: 40px;
+    color: $general_text_color;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.btn-about{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border: 2px solid $background_buttons;
+    background: $background_buttons;
+    padding: 15px 35px;
+    margin-right: 10px;
+    transition: 1s all;
+
+    &:hover{
+        border: 2px solid $background_buttons;
+        background: transparent;
+        color: $background_buttons;
+        font-weight: 400;
+    }
+}
+
+.btn-price{
+    color: $background_buttons;
+    font-size: 20px;
+    font-weight: 400;
+    border: 2px solid $background_buttons;
+    padding: 15px 35px;
+    margin-right: 10px;
+    transition: 1s all;
+
+    &:hover{
+        border: 2px solid $background_buttons;
+        background: $background_buttons;
+        color: white;
+        font-weight: 400;
+    }
+}
+
+.btn-price-card{
+    font-size: 21px;
+    text-transform: uppercase;
+    background: $background_buttons;
+    color: white;
+    padding: 5px 30px;
+    transition: 1s all;
+
+    &:hover{
+        background: #1f96e0;
+        color: white;
+    }
+}
+
+.line{
+    height: 3px;
+    width: 120px;
+    background: $background_buttons;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.line2{
+    width: 90%;
+    height: 1px;
+    background: #d1d1d1;
+    margin: 12px auto;
+}
+
+
+
+
+.header{
+    background: url(images/bg.jpg) center center / cover no-repeat fixed;
+
+    .shadow{
+        background: rgba(0, 0, 0, 0.75);
+        padding: 100px 0;
+
+        .logo{
+            background: url(images/logo.png) left center/contain no-repeat;
+            height: 30px;
+            width: 50%;
+            margin-bottom: 25px;
+        }
+
+        h1{
+            color: white;
+            font-size: 50px;
+            margin-bottom: 25px;
+        }
+
+        p{
+            color: white;
+            line-height: 1.7;
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        .header-form{
+            background: rgba(119, 119, 119, 0.3);
+
+            h3{
+                color: white;
+                font-size: 30px;
+                font-weight: 100;
+                padding: 10px;
+            }
+
+            .form{
+                [type="text"], [type="email"]{
+                    width: 100%;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    margin-bottom: 15px;
+                }
+
+                [type="submit"]{
+                    background-color: $background_buttons;
+                    width: 100%;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    color: white;
+                    text-transform: uppercase;
+                    transition: 1s all;
+
+                    &:hover{
+                        background-color: #1f96e0;
+                    }
+                }
+            }
+
+            p{
+                font-size: 14px;
+                line-height: 2;
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+
+
+
+.menu{
+    border-bottom: 2px solid $general_text_color;
+
+    .navbar{
+        .navbar-brand{
+            .img-fluid{
+                max-width: 50%;
+            }
+        }
+
+        .navbar-toggler{
+            background-color: blue;
+        }
+
+        .navbar-nav{
+            white-space: nowrap;
+
+            .nav-link{
+                font-size: 20px;
+                color: $general_text_color;
+
+                &.active{
+                    color: $background_buttons;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.tasks{
+    padding: 100px 0;
+
+    .tasks-contant{
+        h2{
+            font-size: 40px;
+            font-weight: 400;
+            color: $general_text_color;
+            margin-bottom: 20px;
+        }
+
+        p{
+            font-size: 18px;
+            font-weight: 100;
+            color: $general_text_color;
+        }
+    }
+}
+
+
+
+
+.idea{
+    background: #f6f6f6;
+    padding: 50px 0 10px;
+    .idea-gen{
+        h2{
+            font-size: 40px;
+            color: $general_text_color;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
+        p{
+            font-size: 20px;
+            font-weight: 100;
+            margin-bottom: 70px;
+            color: $general_text_color;
+        }
+    }
+
+    .idea-contant{
+        margin-top: 10px;
+
+        .idea-card{
+            margin-bottom: 25px;
+            transition: 1s all;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        .book-icon{
+            @include idea_contant_icons('images/money.svg');
+        }
+
+        .book-money{
+            @include idea_contant_icons('images/money.svg');
+        }
+
+        .book-basket{
+            @include idea_contant_icons('images/money.svg');
+        }
+
+        .book-people{
+            @include idea_contant_icons('images/money.svg');
+        }
+
+        h3{
+            color: $general_text_color;
+            font-size: 23px;
+            font-weight: 400;
+        }
+
+        p{
+            font-size: 18px;
+            font-weight: 100;
+            color: $general_text_color;
+        }
+    }
+}
+
+
+
+
+.about-prices{
+    padding: 100px 0;
+
+    h2{
+        font-size: 40px;
+        color: $general_text_color;
+        margin-bottom: 15px;
+        font-weight: 400;
+    }
+
+    p{
+        font-size: 18px;
+        font-weight: 100;
+        color: $general_text_color;
+    }
+
+    img{
+        margin-top: 15px;
+    }
+}
+
+
+
+
+.about-connection{
+    background: url(images/bg.jpg) center center / cover no-repeat fixed;
+    color: wheat;
+
+    .connection-shadow{
+        background: rgba(0, 0, 0, 0.75);
+        padding: 100px 0;
+
+        h2{
+            font-size: 40px;
+            color: white;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
+        p{
+            font-size: 18px;
+            font-weight: 100;
+            color: white;
+            margin-bottom: 35px;
+        }
+
+        .btn-connection{
+            background: $background_buttons;
+            font-size: 23px;
+            color: white;
+            font-weight: 100;
+            padding: 10px 40px;
+            transition: 1s all;
+
+            &:hover{
+                background: #1f96e0;
+            }
+        }
+    }
+}
+
+
+
+
+.price{
+    padding: 100px 0;
+
+    h2{
+        text-transform: uppercase;
+    }
+
+    .price-card{
+        border: 2px solid #d1d1d1;
+        padding: 15px;
+        margin-right: 10px;
+        width: 24%;
+        
+        .icon-radio{
+            @include price_icons('images/radio.svg');
+        }
+
+        .icon-game{
+            @include price_icons('images/radio.svg');
+        }
+
+        .icon-react{
+            @include price_icons('images/radio.svg');
+        }
+
+        .icon-settings{
+            @include price_icons('images/radio.svg');
+        }
+
+        h4{
+            color: $general_text_color;
+            margin-bottom: 25px;
+        }
+
+        .upgrade{
+            position: relative;
+            color: $background_buttons;
+            font-size: 37px;
+
+            span{
+                color: $general_text_color;
+                font-size: 18px;
+            }
+        }
+
+        .upgrade::before{
+            content: 'от';
+            color: $general_text_color;
+            font-size: 20px;
+            font-weight: 400;
+            position: absolute;
+            top: -20%;
+            left: 18%;
+        }
+
+        p{
+            color: $general_text_color;
+            font-weight: 900;
+            font-size: 18px;
+            margin-bottom: 15px;
+
+            span{
+                font-weight: 100;
+                font-size: 18px;
+            }
+
+            s{
+                font-weight: 100;
+                font-size: 18px;
+            }
+        }
+
+        &:hover{
+            box-shadow: 2px 2px 2px $general_text_color;
+            transform: scale(1.1);
+            transition: 1s all;
+        }
+    }
+}
+
+
+
+
+.clients{
+    padding: 50px 0;
+    background: #f6f6f6;
+
+    h2{
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+.reviews{
+    padding: 100px 0;
+
+    h2{
+        text-transform: uppercase;
+    }
+
+    .carousel-indicators{
+        margin-bottom: 0rem;
+    }
+
+    .carousel-dark .carousel-indicators [data-bs-target]{
+        background-color: $background_buttons;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        border: 0;
+        border-radius: 45px;
+    }
+
+    .carousel-inner{
+        .carousel-item{
+            img{
+                margin: 0 auto;
+                width: 10%;
+                border-radius: 45px;
+            }
+
+            .carousel-caption{
+                position: unset;
+
+                h5{
+                    color: $general_text_color;
+                    font-size: 20px;
+                    margin-bottom: 25px;
+                    font-weight: 100;
+                    line-height: 1.5;
+                }
+
+                p{
+                    color: $general_text_color;
+                    font-size: 17px;
+                    font-weight: 400;
+                    margin-bottom: 35px;
+
+                    span{
+                        color: $background_buttons;
+                        font-style: italic;
+                        font-weight: 100;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.connection{
+    background: url(images/bg.jpg) center center / cover no-repeat fixed;
+
+    .connection-shadow{
+        background: rgba(0, 0, 0, 0.75);
+        padding: 100px 0;
+
+        .col-md-5{
+            color: white;
+
+            h3{
+                font-size: 33px;
+                color: $background_buttons;
+                margin-bottom: 15px;
+
+                span{
+                    color: white;
+                }
+            }
+
+            .connection-info{
+                display: flex;
+
+                .icon-place{
+                    @include connection_icons('images/placeholder.png');
+                }
+
+                .icon-tel{
+                    @include connection_icons('images/telephone.png');
+                }
+
+                .icon-email{
+                    @include connection_icons('images/mail.png');
+                }
+
+                p{
+                    a{
+                        color: $background_buttons;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .form{
+            [type="text"], [type="email"]{
+                width: 100%;
+                padding: 13px;
+                margin-bottom: 15px;
+                box-sizing: border-box;
+            }
+
+            .want{
+                height: 150px;
+            }
+
+            [type="submit"]{
+                width: 100%;
+                padding: 13px;
+                font-size: 20px;
+                color: white;
+                background: $background_buttons;
+                transition: 1s all;
+
+                &:hover{
+                    background: #1f96e0;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.footer{
+    padding: 50px 0;
+
+    .twitter{
+        @include social_icons('images/social/twitter_icon-icons.com_66093.svg');
+    }
+
+    .facebook{
+        @include social_icons('images/social/twitter_icon-icons.com_66093.svg');
+    }
+
+    .gmail{
+        @include social_icons('images/social/twitter_icon-icons.com_66093.svg');
+    }
+
+    .instagram{
+        @include social_icons('images/social/twitter_icon-icons.com_66093.svg');
+    }
+}
+
+
+
+
+
+
+@media (max-width: 1200px){
+    .price{
+        .row{
+            justify-content: center;
+        }
+
+        .price-card{
+            width: 50%;
+            margin: 10px auto;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .header{
+        .shadow{
+            .header-form{
+                margin-top: 25px;
+            }
+        }
+    }
+
+    .price{
+        .price-card{
+            width: 90%;
+            margin: 10px auto;
+        }
+    }
+}
+
+@media (max-width: 362px){
+    .btn-about{
+        margin-bottom: 10px;
+    }
+
+    .header{
+        .shadow{
+            text-align: center;
+
+            .logo{
+                background-position: center;
+                width: 100%;
+            }
+        }
+    }
+}
