@@ -1,0 +1,1536 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Компоненты bootstrap</title>
+</head>
+
+<body>
+    <h1 class="text-center">Аккордеон</h1>
+    <div class="container mb-5">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Элемент аккордеона #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Это тело аккордеона первого элемента.</strong> По умолчанию оно скрыто, пока плагин
+                        сворачивания не добавит соответствующие классы, которые мы используем для стилизации каждого
+                        элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью
+                        переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши
+                        переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в
+                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Элемент аккордеона #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Это тело аккордеона второго элемента.</strong> По умолчанию он скрыт, пока плагин
+                        свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого
+                        элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью
+                        переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши
+                        переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в
+                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Элемент аккордеона #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию оно скрыто, пока плагин
+                        свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого
+                        элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью
+                        переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши
+                        переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в
+                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h1 class="text-center">Уведомления (примеры)</h1>
+    <div class="container mb-5">
+        <div class="alert alert-primary" role="alert">
+            Простое primary уведомление - зацените!
+        </div>
+        <div class="alert alert-secondary" role="alert">
+            Простое secondary уведомление - зацените!
+        </div>
+        <div class="alert alert-success" role="alert">
+            Простое success уведомление - зацените!
+        </div>
+        <div class="alert alert-danger" role="alert">
+            Простое danger уведомление - зацените!
+        </div>
+        <div class="alert alert-warning" role="alert">
+            Простое warning уведомление - зацените!
+        </div>
+        <div class="alert alert-info" role="alert">
+            Простое info уведомление - зацените!
+        </div>
+        <div class="alert alert-light" role="alert">
+            Простое light уведомление - зацените!
+        </div>
+        <div class="alert alert-dark" role="alert">
+            Простое dark уведомление - зацените!
+        </div>
+
+
+        <h2 class="text-center">Уведомления со внутренними ссылками</h2>
+        <div class="alert alert-primary" role="alert">
+            Простое primary уведомление с <a href="#" class="alert-link">примером ссылки</a>. Нажмите, если нравится.
+        </div>
+        <div class="alert alert-secondary" role="alert">
+            Простое secondary уведомление с <a href="#" class="alert-link">примером ссылки</a>. Нажмите, если нравится.
+        </div>
+        <div class="alert alert-success" role="alert">
+            Простое success уведомление с <a href="#" class="alert-link">примером ссылки</a>. Нажмите, если нравится.
+        </div>
+        <div class="alert alert-danger" role="alert">
+            Простое danger уведомление с <a href="#" class="alert-link">примером ссылки</a>. Нажмите, если нравится.
+        </div>
+        <div class="alert alert-warning" role="alert">
+            Простое warning уведомление с <a href="#" class="alert-link">примером ссылки</a>. Нажмите, если нравится.
+        </div>
+        <div class="alert alert-info" role="alert">
+            Простое info уведомление с <a href="#" class="alert-link">примером ссылки</a>. Нажмите, если нравится.
+        </div>
+        <div class="alert alert-light" role="alert">
+            Простое light уведомление с <a href="#" class="alert-link">примером ссылки</a>. Нажмите, если нравится.
+        </div>
+        <div class="alert alert-dark" role="alert">
+            Простое dark уведомление с <a href="#" class="alert-link">примером ссылки</a>. Нажмите, если нравится.
+        </div>
+
+
+        <h2 class="text-center">Уведомления с возможностью закрыть его</h2>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Святой гуакамоле!</strong> Вам следует проверить некоторые из этих полей ниже.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Закрыть"></button>
+        </div>
+    </div>
+
+
+    <h1 class="text-center">Значки</h1>
+    <div class="container mb-5">
+        <h1>Пример заголовока <span class="badge bg-secondary">Новый</span></h1>
+        <h2>Пример заголовока <span class="badge bg-secondary">Новый</span></h2>
+        <h3>Пример заголовока <span class="badge bg-secondary">Новый</span></h3>
+        <h4>Пример заголовока <span class="badge bg-secondary">Новый</span></h4>
+        <h5>Пример заголовока <span class="badge bg-secondary">Новый</span></h5>
+        <h6>Пример заголовока <span class="badge bg-secondary">Новый</span></h6>
+
+
+        <h2 class="text-center">Значки как часть ссылок или кнопок для счетчика</h2>
+        <button type="button" class="btn btn-primary">
+            Оповещения <span class="badge bg-success rounded-pill">4</span>
+        </button>
+    </div>
+
+
+    <h1 class="text-center">Кнопки</h1>
+    <div class="container mb-5">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+
+
+        <h2 class="text-center">Кнопки с фоном при наведении а так же смена размера кнопок</h2>
+        <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
+        <button type="button" class="btn btn-outline-secondary btn-sm">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+
+
+        <h2 class="text-center">Блочные кнопки</h2>
+        <div class="d-grid gap-2 mb-2">
+            <button class="btn btn-primary" type="button">Кнопка</button>
+            <button class="btn btn-primary" type="button">Кнопка</button>
+        </div>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="button">Кнопка</button>
+            <button class="btn btn-primary" type="button">Кнопка</button>
+        </div>
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary mr-md-2" type="button">Кнопка</button>
+            <button class="btn btn-primary" type="button">Кнопка</button>
+        </div>
+    </div>
+
+
+    <h1 class="text-center">Группа кнопок</h1>
+    <div class="container mb-5">
+        <div class="btn-group" role="group" aria-label="Простой пример">
+            <button type="button" class="btn btn-primary">Левая</button>
+            <button type="button" class="btn btn-primary">Средняя</button>
+            <button type="button" class="btn btn-primary">Правая</button>
+        </div>
+
+        <div class="btn-group">
+            <a href="#" class="btn btn-primary active" aria-current="page">Активная ссылка</a>
+            <a href="#" class="btn btn-primary">Ссылка</a>
+            <a href="#" class="btn btn-primary">Ссылка</a>
+        </div>
+
+
+        <h2 class="text-center">Стилизация кнопок при наведении</h2>
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-danger">Левая</button>
+            <button type="button" class="btn btn-warning">Средняя</button>
+            <button type="button" class="btn btn-success">Правая</button>
+        </div>
+
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-primary">Левая</button>
+            <button type="button" class="btn btn-outline-primary">Средняя</button>
+            <button type="button" class="btn btn-outline-primary">Правая</button>
+        </div>
+
+
+        <h2 class="text-center">Группы флажков и переключателей</h2>
+        <div class="btn-group" role="group" aria-label="Базовая группа переключателей флажков">
+            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck1">Флажок 1</label>
+
+            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck2">Флажок 2</label>
+
+            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck3">Флажок 3</label>
+        </div>
+
+        <div class="btn-group" role="group" aria-label="Базовая группа переключателей радио">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="btnradio1">Радио 1</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio2">Радио 2</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio3">Радио 3</label>
+        </div>
+
+
+        <h2 class="text-center">Размеры кнопок</h2>
+        <div class="btn-group btn-group-lg" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-danger">Левая</button>
+            <button type="button" class="btn btn-warning">Средняя</button>
+            <button type="button" class="btn btn-success">Правая</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-danger">Левая</button>
+            <button type="button" class="btn btn-warning">Средняя</button>
+            <button type="button" class="btn btn-success">Правая</button>
+        </div>
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-danger">Левая</button>
+            <button type="button" class="btn btn-warning">Средняя</button>
+            <button type="button" class="btn btn-success">Правая</button>
+        </div>
+
+
+        <h2 class="text-center">Вертикальный вариант кнопок</h2>
+        <div class="btn-group-vertical" role="group" aria-label="Группа кнопок с вложенным раскрывающимся списком">
+            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-primary">2</button>
+
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Выпадающая кнопка
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <li><a class="dropdown-item" href="#">Выпадающая ссылка</a></li>
+                    <li><a class="dropdown-item" href="#">Выпадающая ссылка</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <h1 class="text-center">Карточки</h1>
+    <div class="container mb-5">
+        <div class="card" style="width: 18rem;">
+            <img src="https://pixabay.com/get/gd7e2a99471ab627c20b1dc6c1d5245659557124eb3607036c2f9f86fcf4e3ff99cdd18813d6c28573b1ef637813bc5e1_640.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Заголовок карточки</h5>
+                <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и
+                    составлять основную часть содержимого карты.</p>
+                <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+            </div>
+        </div>
+
+
+        <h2 class="text-center">Карточки вылетающие как рекомендация пользователю</h2>
+        <div class="card text-center">
+            <div class="card-header">
+                Рекомендуемые
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Особое обращение с заголовком</h5>
+                <p class="card-text">С вспомогательным текстом ниже в качестве естественного перехода к дополнительному
+                    контенту.</p>
+                <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+            </div>
+            <div class="card-footer text-muted">
+                2 дня спустя
+            </div>
+        </div>
+
+
+        <h2 class="text-center">Выравнивание текста внутри карточек</h2>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Особое обращение с заголовком</h5>
+                <p class="card-text">С вспомогательным текстом ниже в качестве естественного перехода к дополнительному
+                    контенту.</p>
+                <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+            </div>
+        </div>
+
+        <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Особое обращение с заголовком</h5>
+                <p class="card-text">С вспомогательным текстом ниже в качестве естественного перехода к дополнительному
+                    контенту.</p>
+                <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+            </div>
+        </div>
+
+        <div class="card text-end" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Особое обращение с заголовком</h5>
+                <p class="card-text">С вспомогательным текстом ниже в качестве естественного перехода к дополнительному
+                    контенту.</p>
+                <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+            </div>
+        </div>
+
+
+        <h2 class="text-center">Навигационные карточки</h2>
+        <div class="card text-center">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="true" href="#">Активная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ссылка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Отключенная</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Особое обращение с заголовком</h5>
+                <p class="card-text">С вспомогательным текстом ниже в качестве естественного перехода к дополнительному
+                    контенту.</p>
+                <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+            </div>
+        </div>
+
+
+        <h2 class="text-center">Цветные карточки</h2>
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Хедер</div>
+            <div class="card-body">
+                <h5 class="card-title">Primary Заголовок карточки</h5>
+                <p class="card-text">Несколько быстрых примеров текста для построения на основе Заголовок карточки и
+                    составления основной части содержимого карточки.</p>
+            </div>
+        </div>
+        <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Хедер</div>
+            <div class="card-body">
+                <h5 class="card-title">Secondary Заголовок карточки</h5>
+                <p class="card-text">Несколько быстрых примеров текста для построения на основе Заголовок карточки и
+                    составления основной части содержимого карточки.</p>
+            </div>
+        </div>
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Хедер</div>
+            <div class="card-body">
+                <h5 class="card-title">Success Заголовок карточки</h5>
+                <p class="card-text">Несколько быстрых примеров текста для построения на основе Заголовок карточки и
+                    составления основной части содержимого карточки.</p>
+            </div>
+        </div>
+        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+            <div class="card-header">Хедер</div>
+            <div class="card-body">
+                <h5 class="card-title">Danger Заголовок карточки</h5>
+                <p class="card-text">Несколько быстрых примеров текста для построения на основе Заголовок карточки и
+                    составления основной части содержимого карточки.</p>
+            </div>
+        </div>
+        <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
+            <div class="card-header">Хедер</div>
+            <div class="card-body">
+                <h5 class="card-title">Warning Заголовок карточки</h5>
+                <p class="card-text">Несколько быстрых примеров текста для построения на основе Заголовок карточки и
+                    составления основной части содержимого карточки.</p>
+            </div>
+        </div>
+        <div class="card text-dark bg-info mb-3" style="max-width: 18rem;">
+            <div class="card-header">Хедер</div>
+            <div class="card-body">
+                <h5 class="card-title">Info Заголовок карточки</h5>
+                <p class="card-text">Несколько быстрых примеров текста для построения на основе Заголовок карточки и
+                    составления основной части содержимого карточки.</p>
+            </div>
+        </div>
+        <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+            <div class="card-header">Хедер</div>
+            <div class="card-body">
+                <h5 class="card-title">Light Заголовок карточки</h5>
+                <p class="card-text">Несколько быстрых примеров текста для построения на основе Заголовок карточки и
+                    составления основной части содержимого карточки.</p>
+            </div>
+        </div>
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">Хедер</div>
+            <div class="card-body">
+                <h5 class="card-title">Dark Заголовок карточки</h5>
+                <p class="card-text">Несколько быстрых примеров текста для построения на основе Заголовок карточки и
+                    составления основной части содержимого карточки.</p>
+            </div>
+        </div>
+
+
+        <h2 class="text-center">Группа карточек</h2>
+        <div class="card-group">
+            <div class="card">
+                <img src="https://pixabay.com/get/g21d983bf98a788610764292a89e6dd32b02e85aee6198f5a865732095bc6e9b6108d819b116f02a88ac7c760436a844b_640.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Заголовок карточки</h5>
+                    <p class="card-text">Это более широкая карточка с вспомогательным текстом ниже в качестве
+                        естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
+                    <p class="card-text"><small class="text-muted">Последнее обновление 3 мин. назад</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://pixabay.com/get/g21d983bf98a788610764292a89e6dd32b02e85aee6198f5a865732095bc6e9b6108d819b116f02a88ac7c760436a844b_640.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Заголовок карточки</h5>
+                    <p class="card-text">Эта подсказка имеет вспомогательный текст ниже, как естественный ввод к
+                        дополнительному контенту.</p>
+                    <p class="card-text"><small class="text-muted">Последнее обновление 3 мин. назад</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://pixabay.com/get/g21d983bf98a788610764292a89e6dd32b02e85aee6198f5a865732095bc6e9b6108d819b116f02a88ac7c760436a844b_640.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Заголовок карточки</h5>
+                    <p class="card-text">Это более широкая карта С вспомогательным текстом ниже в качестве естественного
+                        перехода к дополнительному контенту. Эта карточка имеет даже более длинный контент, чем первая,
+                        чтобы показать действие одинаковой высоты.</p>
+                    <p class="card-text"><small class="text-muted">Последнее обновление 3 мин. назад</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h1 class="text-center">Карусель (слайды)</h1>
+    <div class="container mb-5">
+        <h2 class="text-center">Слайды с элементами управления</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://pixabay.com/get/g0b74dd37f68ae7236f4f44ae22347967737ddb34f052c655fdcc8cbd33aab64e289e37d0cdf4a9923200cd7c50965992_640.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://pixabay.com/get/g05db1e45a2710f0bdd72eb1d8fc943b3b5094c8eb860e12baedde1cc63b6750bb9858c488d8cb41e8ecfad6216e64d2d_640.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://pixabay.com/get/gf89acdd94c8d9e162789a69514f89ec96e5c85d24235351f8ae39b8bd45829a14e8ceb90a6eeba1374f8a536e47fef2b_640.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+
+
+        <h2 class="text-center">Слайды с элементами управления и индикаторами снизу, которые можно стилизовать самим
+            через scss</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://pixabay.com/get/gf89acdd94c8d9e162789a69514f89ec96e5c85d24235351f8ae39b8bd45829a14e8ceb90a6eeba1374f8a536e47fef2b_640.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://pixabay.com/get/g05db1e45a2710f0bdd72eb1d8fc943b3b5094c8eb860e12baedde1cc63b6750bb9858c488d8cb41e8ecfad6216e64d2d_640.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://pixabay.com/get/g0b74dd37f68ae7236f4f44ae22347967737ddb34f052c655fdcc8cbd33aab64e289e37d0cdf4a9923200cd7c50965992_640.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+
+
+        <h2 class="text-center">Слайды с элементами управления и индикаторами снизу и подписями, которые
+            можностилизовать самим через scss</h2>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://pixabay.com/get/gf89acdd94c8d9e162789a69514f89ec96e5c85d24235351f8ae39b8bd45829a14e8ceb90a6eeba1374f8a536e47fef2b_640.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Метка первого слайда</h5>
+                        <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://pixabay.com/get/g05db1e45a2710f0bdd72eb1d8fc943b3b5094c8eb860e12baedde1cc63b6750bb9858c488d8cb41e8ecfad6216e64d2d_640.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Метка второго слайда</h5>
+                        <p>Некоторый репрезентативный заполнитель для второго слайда.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://pixabay.com/get/g0b74dd37f68ae7236f4f44ae22347967737ddb34f052c655fdcc8cbd33aab64e289e37d0cdf4a9923200cd7c50965992_640.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Метка третьего слайда</h5>
+                        <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+    </div>
+
+
+    <h1 class="text-center">Кнопки закрытия</h1>
+    <div class="container mb-5">
+        <button type="button" class="btn-close" aria-label="Close"></button>
+    </div>
+
+
+    <h1 class="text-center">Сворачиваемое содержимое</h1>
+    <div class="container mb-5">
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Ссылка с href
+            </a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                Кнопка с data-target
+            </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                Некоторый заполнитель для компонента сворачивания. Эта панель по умолчанию скрыта, но открывается, когда
+                пользователь активирует соответствующий триггер.
+            </div>
+        </div>
+
+
+        <h2 class="text-center">Множество целей</h2>
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                aria-expanded="false" aria-controls="multiCollapseExample1">Переключить первый элемент</a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                aria-controls="multiCollapseExample2">Переключить второй элемент</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+                aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Переключить оба
+                элемента</button>
+        </p>
+        <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                        Некоторый заполнитель для первого компонента сворачивания в этом примере множественного
+                        сворачивания. Эта панель по умолчанию скрыта, но открывается, когда пользователь активирует
+                        соответствующий триггер.
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                        Некоторое содержимое заполнителя для второго компонента сворачивания в этом примере
+                        множественного сворачивания. Эта панель по умолчанию скрыта, но открывается, когда пользователь
+                        активирует соответствующий триггер.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h1 class="text-center">Выпадающие списки</h1>
+    <div class="container mb-5">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Кнопка выпадающего списка
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Действие</a></li>
+                <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+            </ul>
+        </div>
+
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Действие
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Действие</a></li>
+                <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Отделенная ссылка</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <h1 class="text-center">Модальные окна</h1>
+    <div class="container mb-5">
+        <!-- Кнопка-триггер модального окна -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Запустите демо модального окна
+        </button>
+
+        <!-- Модальное окно -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Заголовок модального окна</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                        <button type="button" class="btn btn-primary">Сохранить изменения</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h2 class="text-center">Модальные окна с прокрутка длинного контента</h2>
+        <!-- Кнопка-триггер модального окна -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Запустить модальное окно со статическим фоном
+        </button>
+
+        <!-- Модальное окно -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Заголовок модального окна</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quo iste omnis totam, eius quam
+                        repudiandae. Facilis consequatur illum delectus voluptate neque alias minima sit eligendi qui
+                        repudiandae eos architecto, quis quod, odit numquam quae temporibus quibusdam quisquam, maiores
+                        exercitationem fugit! Velit porro facere ipsa voluptatibus dolores, incidunt laudantium
+                        accusamus. Hic vitae assumenda consequuntur eos, numquam error ducimus! Quae illum fugiat fuga
+                        laudantium rem. Vel suscipit autem iste aut, cumque voluptas doloribus aperiam id placeat
+                        repellat voluptatum deleniti eius similique accusantium architecto ab a voluptatem soluta,
+                        asperiores cum! A sequi aliquid totam repudiandae suscipit quaerat architecto dignissimos
+                        debitis, esse labore praesentium delectus quasi facilis tenetur deserunt fuga reprehenderit
+                        impedit nulla at sapiente quibusdam minus quia! Vel, id accusantium mollitia ab adipisci eos
+                        sunt! Quia consequuntur necessitatibus possimus quidem. Fugit quod nostrum cumque atque neque
+                        officia laboriosam, tenetur facilis sunt recusandae iusto ut id nisi sequi doloremque inventore
+                        odio et esse delectus accusamus quo minima eveniet fugiat beatae! Obcaecati cumque perferendis
+                        omnis soluta atque exercitationem et odio nihil quos, accusantium vitae neque dolor officia
+                        cupiditate tempore assumenda quo temporibus facilis sequi ab dolore totam laudantium iusto
+                        fugit. Accusantium quasi laboriosam odio placeat libero eos quisquam vitae enim maxime
+                        reprehenderit saepe officiis laudantium vero voluptatem eum veniam perferendis adipisci ex
+                        aliquam doloribus tempora vel iusto, laborum eligendi. Omnis facere, illum alias porro voluptas
+                        tenetur veniam nulla! Deleniti suscipit obcaecati quia omnis alias natus quod ut repudiandae
+                        accusantium hic tempora ea reiciendis optio, aut debitis rem culpa, provident recusandae aliquam
+                        perspiciatis deserunt enim? Error laboriosam praesentium natus nemo reprehenderit, consequatur
+                        inventore, a vitae temporibus perspiciatis esse incidunt eligendi at doloremque, minima tenetur
+                        provident atque eum dolor vero. Reprehenderit sit dignissimos corrupti voluptatem quae? Quis
+                        error dolores enim molestiae eaque in quod recusandae quasi iusto quae, fugit voluptate nihil
+                        totam suscipit consequuntur exercitationem perferendis sapiente. Nobis soluta rem quasi quisquam
+                        alias, quis debitis aperiam cum facere quod, quos fuga. Ipsam nulla quaerat, doloribus accusamus
+                        suscipit ducimus sed repellat ratione ab, maxime culpa corporis nesciunt? Alias laborum quod
+                        similique dicta quos ullam atque a, adipisci deserunt incidunt ea cum vero provident inventore
+                        soluta veniam, eos quaerat quasi autem sed aperiam ipsum praesentium quisquam rem. Ullam,
+                        deleniti voluptas ducimus dignissimos possimus facere blanditiis delectus consectetur error quia
+                        architecto porro ut et inventore exercitationem sed eveniet cum velit quasi? Ratione deserunt
+                        similique laboriosam. Quaerat error iste, quisquam non iusto alias ad minus numquam voluptatum
+                        illo inventore sed aliquid ut cupiditate, suscipit tenetur accusamus? Nostrum tenetur asperiores
+                        amet quaerat ullam odit fugit sequi, deleniti ipsum quae molestias unde, cum earum perferendis
+                        repudiandae facilis nobis fugiat aliquam numquam! Maxime incidunt doloremque eius veniam
+                        exercitationem unde, aliquam iusto asperiores amet est aut quae fugiat dicta facilis natus
+                        corrupti placeat, consequatur, soluta non! Quam voluptates perferendis earum fugit reiciendis
+                        hic corrupti aperiam dolorum nesciunt possimus! Expedita iure quo facilis ipsam sequi
+                        consequatur at magnam! Consequuntur molestiae laboriosam aperiam quia fugiat, ipsum, impedit sed
+                        nostrum, mollitia deserunt sit nisi cupiditate libero facilis? Accusamus laudantium officiis ad
+                        consectetur vero repellendus repellat repudiandae unde.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                        <button type="button" class="btn btn-primary">Понял</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h1 class="text-center">Навигация и вкладки</h1>
+    <div class="container mb-5">
+        <h2 class="text-center">Простая навигация</h2>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Активная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Отключенная</a>
+            </li>
+        </ul>
+
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Активная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Отключенная</a>
+            </li>
+        </ul>
+
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Активная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Отключенная</a>
+            </li>
+        </ul>
+
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Активная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Отключенная</a>
+            </li>
+        </ul>
+
+
+        <h2 class="text-center">Вкладки</h2>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Активная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Отключенная</a>
+            </li>
+        </ul>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Активная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Отключенная</a>
+            </li>
+        </ul>
+
+
+        <h2 class="text-center">Вкладки с выпадающими списками</h2>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Активная</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Выпадающий список</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Действие</a></li>
+                    <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                    <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Отделенная ссылка</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Отключенная</a>
+            </li>
+        </ul>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Активная</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Выпадающий список</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Действие</a></li>
+                    <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                    <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Отделенная ссылка</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Отключенная</a>
+            </li>
+        </ul>
+
+
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Главная</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Профиль</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Контакт</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fuga quisquam illum repellendus
+                ratione molestias, fugit ex sunt reprehenderit obcaecati sit sint veritatis magni incidunt atque
+                laudantium pariatur officia voluptates.
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium error minus ad suscipit nostrum
+                impedit modi incidunt praesentium dolor voluptas, repellendus tenetur placeat porro itaque corrupti
+                asperiores quo mollitia dignissimos.
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum aut aspernatur odio sequi laborum nemo
+                architecto, veritatis totam aperiam id aliquid voluptatum neque labore ullam non provident suscipit
+                ipsam! Dignissimos.
+            </div>
+        </div>
+    </div>
+
+
+    <h1 class="text-center">Панель навигации</h1>
+    <div class="container mb-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="logo2.png" alt="" width="70" height="auto">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ссылка</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Выпадающий список
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Действие</a></li>
+                                <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Отключенная</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                        <button class="btn btn-outline-success" type="submit">Поиск</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <h1 class="text-center">Offcanvas разные выпадающие с боку менюшки</h1>
+    <div class="container mb-5">
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">
+            Link with href
+        </a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
+            Button with data-bs-target
+        </button>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
+                    images, lists, etc.
+                </div>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h1 class="text-center">Пагинация (навигация по страницам сайта)</h1>
+    <div class="container mb-5">
+        <nav aria-label="Пример навигации по страницам">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Предыдущая</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Следующая</a></li>
+            </ul>
+        </nav>
+
+
+        <h2 class="text-center">Иконочный вариант</h2>
+        <nav aria-label="Пример навигации по страницам">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Предыдущая">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Следующая">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <h2 class="text-center">Отключенные и активные состояния</h2>
+        <nav aria-label="...">
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Предыдущая</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Следующая</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <h1 class="text-center">Всплывающие окна при клике</h1>
+    <div class="container mb-5">
+        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover"
+            title="Заголовок всплывающего сообщения"
+            data-bs-content="А вот и потрясающий контент. Это очень интересно. Правильно?">Нажмите, чтобы переключить
+            всплывающее окно
+        </button>
+
+
+        <h2 class="text-center">При наведении</h2>
+        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+            data-bs-content="Disabled popover">
+            <button class="btn btn-primary" type="button" disabled>Отключенная кнопка</button>
+        </span>
+    </div>
+
+
+    <h1 class="text-center">Прогресс загрузок</h1>
+    <div class="container mb-5">
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100"></div>
+        </div>
+
+
+        <h2 class="text-center">Прогресс загрузок с метками</h2>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100">25%</div>
+        </div>
+
+
+        <h2 class="text-center">Прогресс загрузок с визуализацией фонов</h2>
+        <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+
+        <h2 class="text-center">Прогресс загрузок полосатый</h2>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%"
+                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+
+        <h2 class="text-center">Анимированные полосы</h2>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+        </div>
+    </div>
+
+
+    <h1 class="text-center">Отслеживание прокрутки</h1>
+    <div class="container mb-5">
+        <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+            <a class="navbar-brand" href="#">Панель навигации</a>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#fat">@fat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mdo">@mdo</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Выпадающий список</a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#one">один</a></li>
+                        <li><a class="dropdown-item" href="#two">два</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#three">три</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0">
+            <h4 id="fat">@fat</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint minus rem totam iste sequi facere
+                architecto dolor recusandae, ratione quos modi magnam ab dignissimos a, error dicta repellendus,
+                assumenda molestias fugiat autem eligendi exercitationem? Cum ipsum saepe minima magni natus aliquid!
+                Praesentium enim delectus impedit corporis? Iure itaque in recusandae culpa sapiente fugit fugiat
+                doloremque, amet accusantium aperiam iusto maiores error repellat corporis id corrupti sequi
+                voluptatibus inventore expedita. Voluptate aliquam quod hic aut quam odit praesentium maiores explicabo
+                porro quo aliquid harum, eum odio commodi eligendi nulla in, ipsum dolore asperiores maxime perferendis?
+                Id fugit vitae quisquam voluptatem illum nihil maxime cum! Cupiditate corporis voluptate labore id
+                aliquam officiis aspernatur mollitia ratione ea vero. Quis et voluptas corporis qui ipsa ut aliquid.
+                Explicabo cumque nam, veritatis tenetur veniam aspernatur beatae, ipsam error maiores assumenda voluptas
+                ducimus reiciendis voluptatum blanditiis cupiditate quisquam. Voluptates officiis deserunt minima,
+                fugiat debitis asperiores corrupti tempora. Temporibus voluptatum delectus asperiores voluptatibus
+                similique velit est assumenda optio reiciendis corporis magnam saepe aperiam iste explicabo labore
+                mollitia inventore aspernatur, sed itaque soluta commodi eum. Nihil ullam sed eaque distinctio nulla
+                saepe obcaecati voluptates. Ullam sint voluptatibus ipsum atque mollitia consequuntur, odio assumenda,
+                eaque error ab tenetur ut?</p>
+            <h4 id="mdo">@mdo</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint minus rem totam iste sequi facere
+                architecto dolor recusandae, ratione quos modi magnam ab dignissimos a, error dicta repellendus,
+                assumenda molestias fugiat autem eligendi exercitationem? Cum ipsum saepe minima magni natus aliquid!
+                Praesentium enim delectus impedit corporis? Iure itaque in recusandae culpa sapiente fugit fugiat
+                doloremque, amet accusantium aperiam iusto maiores error repellat corporis id corrupti sequi
+                voluptatibus inventore expedita. Voluptate aliquam quod hic aut quam odit praesentium maiores explicabo
+                porro quo aliquid harum, eum odio commodi eligendi nulla in, ipsum dolore asperiores maxime perferendis?
+                Id fugit vitae quisquam voluptatem illum nihil maxime cum! Cupiditate corporis voluptate labore id
+                aliquam officiis aspernatur mollitia ratione ea vero. Quis et voluptas corporis qui ipsa ut aliquid.
+                Explicabo cumque nam, veritatis tenetur veniam aspernatur beatae, ipsam error maiores assumenda voluptas
+                ducimus reiciendis voluptatum blanditiis cupiditate quisquam. Voluptates officiis deserunt minima,
+                fugiat debitis asperiores corrupti tempora. Temporibus voluptatum delectus asperiores voluptatibus
+                similique velit est assumenda optio reiciendis corporis magnam saepe aperiam iste explicabo labore
+                mollitia inventore aspernatur, sed itaque soluta commodi eum. Nihil ullam sed eaque distinctio nulla
+                saepe obcaecati voluptates. Ullam sint voluptatibus ipsum atque mollitia consequuntur, odio assumenda,
+                eaque error ab tenetur ut?</p>
+            <h4 id="one">один</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint minus rem totam iste sequi facere
+                architecto dolor recusandae, ratione quos modi magnam ab dignissimos a, error dicta repellendus,
+                assumenda molestias fugiat autem eligendi exercitationem? Cum ipsum saepe minima magni natus aliquid!
+                Praesentium enim delectus impedit corporis? Iure itaque in recusandae culpa sapiente fugit fugiat
+                doloremque, amet accusantium aperiam iusto maiores error repellat corporis id corrupti sequi
+                voluptatibus inventore expedita. Voluptate aliquam quod hic aut quam odit praesentium maiores explicabo
+                porro quo aliquid harum, eum odio commodi eligendi nulla in, ipsum dolore asperiores maxime perferendis?
+                Id fugit vitae quisquam voluptatem illum nihil maxime cum! Cupiditate corporis voluptate labore id
+                aliquam officiis aspernatur mollitia ratione ea vero. Quis et voluptas corporis qui ipsa ut aliquid.
+                Explicabo cumque nam, veritatis tenetur veniam aspernatur beatae, ipsam error maiores assumenda voluptas
+                ducimus reiciendis voluptatum blanditiis cupiditate quisquam. Voluptates officiis deserunt minima,
+                fugiat debitis asperiores corrupti tempora. Temporibus voluptatum delectus asperiores voluptatibus
+                similique velit est assumenda optio reiciendis corporis magnam saepe aperiam iste explicabo labore
+                mollitia inventore aspernatur, sed itaque soluta commodi eum. Nihil ullam sed eaque distinctio nulla
+                saepe obcaecati voluptates. Ullam sint voluptatibus ipsum atque mollitia consequuntur, odio assumenda,
+                eaque error ab tenetur ut?</p>
+            <h4 id="two">два</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint minus rem totam iste sequi facere
+                architecto dolor recusandae, ratione quos modi magnam ab dignissimos a, error dicta repellendus,
+                assumenda molestias fugiat autem eligendi exercitationem? Cum ipsum saepe minima magni natus aliquid!
+                Praesentium enim delectus impedit corporis? Iure itaque in recusandae culpa sapiente fugit fugiat
+                doloremque, amet accusantium aperiam iusto maiores error repellat corporis id corrupti sequi
+                voluptatibus inventore expedita. Voluptate aliquam quod hic aut quam odit praesentium maiores explicabo
+                porro quo aliquid harum, eum odio commodi eligendi nulla in, ipsum dolore asperiores maxime perferendis?
+                Id fugit vitae quisquam voluptatem illum nihil maxime cum! Cupiditate corporis voluptate labore id
+                aliquam officiis aspernatur mollitia ratione ea vero. Quis et voluptas corporis qui ipsa ut aliquid.
+                Explicabo cumque nam, veritatis tenetur veniam aspernatur beatae, ipsam error maiores assumenda voluptas
+                ducimus reiciendis voluptatum blanditiis cupiditate quisquam. Voluptates officiis deserunt minima,
+                fugiat debitis asperiores corrupti tempora. Temporibus voluptatum delectus asperiores voluptatibus
+                similique velit est assumenda optio reiciendis corporis magnam saepe aperiam iste explicabo labore
+                mollitia inventore aspernatur, sed itaque soluta commodi eum. Nihil ullam sed eaque distinctio nulla
+                saepe obcaecati voluptates. Ullam sint voluptatibus ipsum atque mollitia consequuntur, odio assumenda,
+                eaque error ab tenetur ut?</p>
+            <h4 id="three">три</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint minus rem totam iste sequi facere
+                architecto dolor recusandae, ratione quos modi magnam ab dignissimos a, error dicta repellendus,
+                assumenda molestias fugiat autem eligendi exercitationem? Cum ipsum saepe minima magni natus aliquid!
+                Praesentium enim delectus impedit corporis? Iure itaque in recusandae culpa sapiente fugit fugiat
+                doloremque, amet accusantium aperiam iusto maiores error repellat corporis id corrupti sequi
+                voluptatibus inventore expedita. Voluptate aliquam quod hic aut quam odit praesentium maiores explicabo
+                porro quo aliquid harum, eum odio commodi eligendi nulla in, ipsum dolore asperiores maxime perferendis?
+                Id fugit vitae quisquam voluptatem illum nihil maxime cum! Cupiditate corporis voluptate labore id
+                aliquam officiis aspernatur mollitia ratione ea vero. Quis et voluptas corporis qui ipsa ut aliquid.
+                Explicabo cumque nam, veritatis tenetur veniam aspernatur beatae, ipsam error maiores assumenda voluptas
+                ducimus reiciendis voluptatum blanditiis cupiditate quisquam. Voluptates officiis deserunt minima,
+                fugiat debitis asperiores corrupti tempora. Temporibus voluptatum delectus asperiores voluptatibus
+                similique velit est assumenda optio reiciendis corporis magnam saepe aperiam iste explicabo labore
+                mollitia inventore aspernatur, sed itaque soluta commodi eum. Nihil ullam sed eaque distinctio nulla
+                saepe obcaecati voluptates. Ullam sint voluptatibus ipsum atque mollitia consequuntur, odio assumenda,
+                eaque error ab tenetur ut?</p>
+        </div>
+
+
+        <h2 class="text-center">Пример с вложенной навигацией</h2>
+        <nav id="navbar-example3" class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">Панель навигации</a>
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link" href="#item-1">Элемент 1</a>
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-link ms-3 my-1" href="#item-1-1">Элемент 1-1</a>
+                    <a class="nav-link ms-3 my-1" href="#item-1-2">Элемент 1-2</a>
+                </nav>
+                <a class="nav-link" href="#item-2">Элемент 2</a>
+                <a class="nav-link" href="#item-3">Элемент 3</a>
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-link ms-3 my-1" href="#item-3-1">Элемент 3-1</a>
+                    <a class="nav-link ms-3 my-1" href="#item-3-2">Элемент 3-2</a>
+                </nav>
+            </nav>
+        </nav>
+
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
+            <h4 id="item-1">Элемент 1</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum illo maiores, a odit quaerat perferendis
+                consectetur nisi et, vitae vel in similique, blanditiis earum unde reiciendis nobis. Odit, nobis dolore,
+                at sapiente obcaecati aliquam magni in adipisci impedit illum quidem. Neque quidem sit iure corrupti
+                deleniti? Similique officia voluptates architecto unde neque repudiandae atque nostrum reprehenderit
+                quod exercitationem distinctio dignissimos eos, sit ad suscipit ex inventore impedit? Fugiat repellendus
+                qui laboriosam. Voluptates in dicta dolor error! Fuga dicta, distinctio possimus amet repellendus in
+                maxime molestias ex facere blanditiis corrupti voluptates soluta reiciendis perferendis obcaecati
+                mollitia aperiam dignissimos sunt quae delectus aspernatur! Delectus, autem rerum nisi deserunt, sequi,
+                consequuntur hic nesciunt molestias sit illo consectetur? Architecto ipsum hic soluta at obcaecati
+                quibusdam, modi expedita saepe minus facere ea vero quos officia enim rerum inventore tempora
+                voluptatibus? Modi ut aliquid excepturi dolor eius provident tenetur, eos quas non autem necessitatibus
+                quam recusandae magni sit quos optio vero quisquam voluptate nulla. Ratione quis molestiae illum
+                doloremque qui, debitis ducimus ex cum corrupti? Maxime itaque vero error dolorem iure voluptas rem enim
+                reprehenderit odit beatae qui nemo, deleniti at laboriosam eveniet asperiores, maiores ut, voluptates
+                expedita quos voluptatem delectus aspernatur esse reiciendis. Debitis, repellendus!</p>
+            <h5 id="item-1-1">Элемент 1-1</h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum illo maiores, a odit quaerat perferendis
+                consectetur nisi et, vitae vel in similique, blanditiis earum unde reiciendis nobis. Odit, nobis dolore,
+                at sapiente obcaecati aliquam magni in adipisci impedit illum quidem. Neque quidem sit iure corrupti
+                deleniti? Similique officia voluptates architecto unde neque repudiandae atque nostrum reprehenderit
+                quod exercitationem distinctio dignissimos eos, sit ad suscipit ex inventore impedit? Fugiat repellendus
+                qui laboriosam. Voluptates in dicta dolor error! Fuga dicta, distinctio possimus amet repellendus in
+                maxime molestias ex facere blanditiis corrupti voluptates soluta reiciendis perferendis obcaecati
+                mollitia aperiam dignissimos sunt quae delectus aspernatur! Delectus, autem rerum nisi deserunt, sequi,
+                consequuntur hic nesciunt molestias sit illo consectetur? Architecto ipsum hic soluta at obcaecati
+                quibusdam, modi expedita saepe minus facere ea vero quos officia enim rerum inventore tempora
+                voluptatibus? Modi ut aliquid excepturi dolor eius provident tenetur, eos quas non autem necessitatibus
+                quam recusandae magni sit quos optio vero quisquam voluptate nulla. Ratione quis molestiae illum
+                doloremque qui, debitis ducimus ex cum corrupti? Maxime itaque vero error dolorem iure voluptas rem enim
+                reprehenderit odit beatae qui nemo, deleniti at laboriosam eveniet asperiores, maiores ut, voluptates
+                expedita quos voluptatem delectus aspernatur esse reiciendis. Debitis, repellendus!</p>
+            <h5 id="item-1-2">Элемент 1-2</h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum illo maiores, a odit quaerat perferendis
+                consectetur nisi et, vitae vel in similique, blanditiis earum unde reiciendis nobis. Odit, nobis dolore,
+                at sapiente obcaecati aliquam magni in adipisci impedit illum quidem. Neque quidem sit iure corrupti
+                deleniti? Similique officia voluptates architecto unde neque repudiandae atque nostrum reprehenderit
+                quod exercitationem distinctio dignissimos eos, sit ad suscipit ex inventore impedit? Fugiat repellendus
+                qui laboriosam. Voluptates in dicta dolor error! Fuga dicta, distinctio possimus amet repellendus in
+                maxime molestias ex facere blanditiis corrupti voluptates soluta reiciendis perferendis obcaecati
+                mollitia aperiam dignissimos sunt quae delectus aspernatur! Delectus, autem rerum nisi deserunt, sequi,
+                consequuntur hic nesciunt molestias sit illo consectetur? Architecto ipsum hic soluta at obcaecati
+                quibusdam, modi expedita saepe minus facere ea vero quos officia enim rerum inventore tempora
+                voluptatibus? Modi ut aliquid excepturi dolor eius provident tenetur, eos quas non autem necessitatibus
+                quam recusandae magni sit quos optio vero quisquam voluptate nulla. Ratione quis molestiae illum
+                doloremque qui, debitis ducimus ex cum corrupti? Maxime itaque vero error dolorem iure voluptas rem enim
+                reprehenderit odit beatae qui nemo, deleniti at laboriosam eveniet asperiores, maiores ut, voluptates
+                expedita quos voluptatem delectus aspernatur esse reiciendis. Debitis, repellendus!</p>
+            <h4 id="item-2">Элемент 2</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum illo maiores, a odit quaerat perferendis
+                consectetur nisi et, vitae vel in similique, blanditiis earum unde reiciendis nobis. Odit, nobis dolore,
+                at sapiente obcaecati aliquam magni in adipisci impedit illum quidem. Neque quidem sit iure corrupti
+                deleniti? Similique officia voluptates architecto unde neque repudiandae atque nostrum reprehenderit
+                quod exercitationem distinctio dignissimos eos, sit ad suscipit ex inventore impedit? Fugiat repellendus
+                qui laboriosam. Voluptates in dicta dolor error! Fuga dicta, distinctio possimus amet repellendus in
+                maxime molestias ex facere blanditiis corrupti voluptates soluta reiciendis perferendis obcaecati
+                mollitia aperiam dignissimos sunt quae delectus aspernatur! Delectus, autem rerum nisi deserunt, sequi,
+                consequuntur hic nesciunt molestias sit illo consectetur? Architecto ipsum hic soluta at obcaecati
+                quibusdam, modi expedita saepe minus facere ea vero quos officia enim rerum inventore tempora
+                voluptatibus? Modi ut aliquid excepturi dolor eius provident tenetur, eos quas non autem necessitatibus
+                quam recusandae magni sit quos optio vero quisquam voluptate nulla. Ratione quis molestiae illum
+                doloremque qui, debitis ducimus ex cum corrupti? Maxime itaque vero error dolorem iure voluptas rem enim
+                reprehenderit odit beatae qui nemo, deleniti at laboriosam eveniet asperiores, maiores ut, voluptates
+                expedita quos voluptatem delectus aspernatur esse reiciendis. Debitis, repellendus!</p>
+            <h4 id="item-3">Элемент 3</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum illo maiores, a odit quaerat perferendis
+                consectetur nisi et, vitae vel in similique, blanditiis earum unde reiciendis nobis. Odit, nobis dolore,
+                at sapiente obcaecati aliquam magni in adipisci impedit illum quidem. Neque quidem sit iure corrupti
+                deleniti? Similique officia voluptates architecto unde neque repudiandae atque nostrum reprehenderit
+                quod exercitationem distinctio dignissimos eos, sit ad suscipit ex inventore impedit? Fugiat repellendus
+                qui laboriosam. Voluptates in dicta dolor error! Fuga dicta, distinctio possimus amet repellendus in
+                maxime molestias ex facere blanditiis corrupti voluptates soluta reiciendis perferendis obcaecati
+                mollitia aperiam dignissimos sunt quae delectus aspernatur! Delectus, autem rerum nisi deserunt, sequi,
+                consequuntur hic nesciunt molestias sit illo consectetur? Architecto ipsum hic soluta at obcaecati
+                quibusdam, modi expedita saepe minus facere ea vero quos officia enim rerum inventore tempora
+                voluptatibus? Modi ut aliquid excepturi dolor eius provident tenetur, eos quas non autem necessitatibus
+                quam recusandae magni sit quos optio vero quisquam voluptate nulla. Ratione quis molestiae illum
+                doloremque qui, debitis ducimus ex cum corrupti? Maxime itaque vero error dolorem iure voluptas rem enim
+                reprehenderit odit beatae qui nemo, deleniti at laboriosam eveniet asperiores, maiores ut, voluptates
+                expedita quos voluptatem delectus aspernatur esse reiciendis. Debitis, repellendus!</p>
+            <h5 id="item-3-1">Элемент 3-1</h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum illo maiores, a odit quaerat perferendis
+                consectetur nisi et, vitae vel in similique, blanditiis earum unde reiciendis nobis. Odit, nobis dolore,
+                at sapiente obcaecati aliquam magni in adipisci impedit illum quidem. Neque quidem sit iure corrupti
+                deleniti? Similique officia voluptates architecto unde neque repudiandae atque nostrum reprehenderit
+                quod exercitationem distinctio dignissimos eos, sit ad suscipit ex inventore impedit? Fugiat repellendus
+                qui laboriosam. Voluptates in dicta dolor error! Fuga dicta, distinctio possimus amet repellendus in
+                maxime molestias ex facere blanditiis corrupti voluptates soluta reiciendis perferendis obcaecati
+                mollitia aperiam dignissimos sunt quae delectus aspernatur! Delectus, autem rerum nisi deserunt, sequi,
+                consequuntur hic nesciunt molestias sit illo consectetur? Architecto ipsum hic soluta at obcaecati
+                quibusdam, modi expedita saepe minus facere ea vero quos officia enim rerum inventore tempora
+                voluptatibus? Modi ut aliquid excepturi dolor eius provident tenetur, eos quas non autem necessitatibus
+                quam recusandae magni sit quos optio vero quisquam voluptate nulla. Ratione quis molestiae illum
+                doloremque qui, debitis ducimus ex cum corrupti? Maxime itaque vero error dolorem iure voluptas rem enim
+                reprehenderit odit beatae qui nemo, deleniti at laboriosam eveniet asperiores, maiores ut, voluptates
+                expedita quos voluptatem delectus aspernatur esse reiciendis. Debitis, repellendus!</p>
+            <h5 id="item-3-2">Элемент 3-2</h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum illo maiores, a odit quaerat perferendis
+                consectetur nisi et, vitae vel in similique, blanditiis earum unde reiciendis nobis. Odit, nobis dolore,
+                at sapiente obcaecati aliquam magni in adipisci impedit illum quidem. Neque quidem sit iure corrupti
+                deleniti? Similique officia voluptates architecto unde neque repudiandae atque nostrum reprehenderit
+                quod exercitationem distinctio dignissimos eos, sit ad suscipit ex inventore impedit? Fugiat repellendus
+                qui laboriosam. Voluptates in dicta dolor error! Fuga dicta, distinctio possimus amet repellendus in
+                maxime molestias ex facere blanditiis corrupti voluptates soluta reiciendis perferendis obcaecati
+                mollitia aperiam dignissimos sunt quae delectus aspernatur! Delectus, autem rerum nisi deserunt, sequi,
+                consequuntur hic nesciunt molestias sit illo consectetur? Architecto ipsum hic soluta at obcaecati
+                quibusdam, modi expedita saepe minus facere ea vero quos officia enim rerum inventore tempora
+                voluptatibus? Modi ut aliquid excepturi dolor eius provident tenetur, eos quas non autem necessitatibus
+                quam recusandae magni sit quos optio vero quisquam voluptate nulla. Ratione quis molestiae illum
+                doloremque qui, debitis ducimus ex cum corrupti? Maxime itaque vero error dolorem iure voluptas rem enim
+                reprehenderit odit beatae qui nemo, deleniti at laboriosam eveniet asperiores, maiores ut, voluptates
+                expedita quos voluptatem delectus aspernatur esse reiciendis. Debitis, repellendus!</p>
+        </div>
+    </div>
+
+
+    <h1 class="text-center">Состояние загрузки страниц</h1>
+    <div class="container mb-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-border text-secondary" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-border text-danger" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-border text-warning" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-border text-info" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-border text-dark" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+
+
+        <div class="spinner-grow text-primary" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-grow text-info" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-grow text-light" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-grow text-dark" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+        </div>
+    </div>
+
+
+    <h1 class="text-center">Всплывающие сообщения</h1>
+    <div class="container mb-5">
+        <button type="button" class="btn btn-primary" id="liveToastBtn">Показать лайв тосты</button>
+
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="..." class="rounded me-2" alt="...">
+                    <strong class="me-auto">Bootstrap</strong>
+                    <small>11 мин назад</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+                </div>
+                <div class="toast-body">
+                    Привет, мир! Это тост-сообщение.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Всю информацию о компонентах можно найти на официальном сайте bootstrap https://getbootstrap.su/ в разделе Документация, Компоненты -->
+
+
+    <!-- Вариант 1: Bootstrap в связке с Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
