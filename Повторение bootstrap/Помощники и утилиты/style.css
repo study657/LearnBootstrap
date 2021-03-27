@@ -1,0 +1,28 @@
+.borders-test div {
+  width: 100px;
+  height: 100px;
+}
+
+.borders-test span {
+  width: 100px;
+  height: 100px;
+}
+
+.borders-test img {
+  width: 75px;
+  height: 75px;
+}
+
+.flex-test div {
+  background-color: rgba(41, 37, 37, 0.13);
+}
+
+.flex-test .test {
+  height: 100px;
+}
+
+.overflow-test div {
+  width: 200px;
+  height: 300px;
+}
+/*# sourceMappingURL=style.css.map */
